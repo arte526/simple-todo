@@ -1,0 +1,174 @@
+
+.TodoItem{
+    width: 720px;
+    height: 75px;
+    
+    display: flex;
+    margin: 0px 0px 25px 0px;
+    border-radius: 25px;
+
+    box-shadow: 0 0.5px 15.5px 3px #ddd;
+    background-color: rgb(243, 243, 243);
+
+    .TodoItem-descriptionField{
+        width: 49.79999%;
+        height: 100%;
+
+        .TodoItem-descriptionP{
+            max-width: 100%;
+            height: 25px;
+
+            padding: 0;
+            margin: 25px 0px 25px 25px;
+
+            font-size: 20px;
+            font-family: 'Roboto' monospace;
+        }
+    }
+
+    .TodoItem-date{
+        width: 17.2%;
+
+        display: flex;
+        .dateForFlexDirection{
+            display: flex;
+            flex-direction: column;
+            .TodoItem-dateDay{
+                max-width: 100%;
+                max-height: 100%;
+
+                margin: 10px 57px 0px;
+
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .TodoItem-dateMonth{
+                max-width: 100%;
+                max-height: 100%;
+
+                margin: 0px 25px 0px 22px;
+                
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .TodoItem-time{
+        width: 17.5%;
+
+        display: flex;
+        .TodoItem-timeP{
+            max-width: 100%;
+            max-height: 25px;
+            
+            margin: 24px 37.5px;
+
+            font-size: 20px;
+            font-weight: 500;
+            font-family: "Roboto" monospace;
+        }
+    }
+    
+    .TodoItem-buttons{
+        width: 14%;
+
+        display: flex;
+        flex-direction: row;
+        .TodoItem-editField{
+            width: 50%;
+
+            .TodoItem-editButton{
+                width: 34px;
+                max-width: 100%;
+                height: 34px;
+                max-height: 100%;
+
+                display: flex;
+                margin: 20.5px 7px;
+            }
+        }
+        .TodoItem-deleteField{
+            width: 50%;
+
+            .TodoItem-deleteButton{
+                width: 34px;
+                max-width: 100%;
+                height: 34px;
+                max-height: 100%;
+
+                display: flex;
+                margin: 20.5px 7px;
+            }
+        }
+    }
+}
+
+
+
+//animations
+
+.TodoItem-deleteButton:hover{
+    opacity: 0.7;
+}
+.deleteButtonAnimation{
+    animation-name: spinDone;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes spinDone {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.editButtonAnimationOn{
+    animation-name: editButtonOn;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes editButtonOn {
+    0% {
+        transform:rotate(0deg);
+    }
+    10%{
+
+    }
+    100% {
+        scale: 1.1;
+        transform:rotate(-45deg);
+    }
+}
+.editButtonAnimationOff{
+    animation-name: editButtonOff;
+    animation-duration: .3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes editButtonOff {
+    0% {
+        scale: 1.1;
+        transform:rotate(-45deg);
+    }
+    10%{
+
+    }
+    100% {
+        scale: 1;
+        transform:rotate(0deg);
+    }
+}
+.inLi{
+    width: 1px;
+    height: 24px;
+    display: flex;
+
+    margin-top: 25px;
+
+    background-color: black;
+}

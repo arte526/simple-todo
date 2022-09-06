@@ -1,0 +1,85 @@
+.TodoList-nav-wrapper{
+    width: 768px;
+    height: 85px;
+}
+.TodoList-nav{
+    width: 720px;
+    height: 35px;
+    position: absolute;
+
+    margin: 25px 24px 25px 24px;
+    padding: 0;
+    display: flex;
+    border-radius: 25px;
+    
+    text-decoration: none;
+    box-shadow: 0 0.5px 15.5px 3px #ddd;
+    background-color: rgb(243, 243, 243);
+
+    .nav-name{
+        width: 50%;
+
+        display: flex;
+
+        .nav-name-label{
+            width: calc(100%-(margin-left));
+
+            padding: 0;
+            margin: 4.5px 0px 4.5px 20px;
+            
+            color: rgb(109, 109, 109);
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 400;
+        }
+    }
+    .nav-date{
+        width: 17.5%;
+
+        display: flex;
+
+        .nav-date-label{
+            max-width: 100%;
+            max-height: 100%;
+
+            margin: 4.5px 0px;
+            padding: 0px 37px;
+            
+            color: rgb(109, 109, 109);
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 400;
+        }
+    }
+    .nav-time{
+        width: 17.5%;
+
+        display: flex;
+
+        .nav-time-label{
+            width: 100%;
+
+            margin: 4.5px 0px;
+            padding: 0px 34px;
+            
+            color: rgb(109, 109, 109);
+            font-size: 20px;
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 400;
+        }
+    }
+    .nav-probka{
+        width: 15%;
+        display: flex;
+    }
+}
+
+.palka{
+    width: 1px;
+    height: 24px;
+    display: flex;
+
+    margin-top: 6px;
+
+    background-color: black;
+}

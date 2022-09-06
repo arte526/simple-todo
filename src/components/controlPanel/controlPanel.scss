@@ -1,0 +1,121 @@
+.ControlPanel{
+    width: 768px;
+    height: 150px;
+    
+    margin-left: calc((100% - 768px)/2);
+    margin-top: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 29px 0px rgba(66, 68, 90, 0.47);
+    background: rgba(205, 205, 205, 0.197);
+
+    .ControlPanelFields{
+        display: flex;
+        padding-top: calc((150px - 40px) /2);
+        .ControlPanelFields-left{
+            width: 50%;
+            .addInputWrapper{
+                padding: 0px;
+                margin-left: 24px;
+                .addInput{   
+                    width: 90%;
+                    padding-left: 20px;
+                    height: 40px;
+                    border-radius: 10px;
+                    border-width: 0px;
+                
+                    font-size: 20px;
+                    font-family: 'Roboto Mono', monospace;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 14px -1px rgba(66, 68, 90, 0.34);
+                    outline: none;
+                }
+                .addInput::placeholder{
+                    color: rgb(108, 108, 108);
+                }
+                .addInput::focus{
+                    outline: none;
+                }
+            }
+        }
+        
+        .ControlPanelFields-right{
+            width: 50%;
+            display: flex;
+
+            .dateInputWrapper{
+                width: 33.3%;
+                .dateInput[type="date"]{
+                    width: calc(100% - 20px);
+                    height: 100%;
+
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+
+                    cursor: pointer;
+                    font-size: 13px;
+                    font-family: 'Roboto Mono', monospace;
+                    box-shadow: 0px 0px 14px -1px rgba(66, 68, 90, 0.34);
+                    background-color: rgba(210, 210, 210, 0.446);
+                }   
+            }
+           
+            .timeInputWrapper{
+                width: 33.3%;
+                .timeInput[type="time"]{
+                    width: calc(100% - 20px);
+                    height: 100%;
+
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+
+                    cursor: pointer;
+                    font-size: 13px;
+                    font-family: 'Roboto Mono', monospace;
+                    box-shadow: 0px 0px 14px -1px rgba(66, 68, 90, 0.34);
+                    background-color: rgba(210, 210, 210, 0.446);
+                }
+                .timeInput::webkit-calendar-picker-indicator{
+                    background-color: black;
+                }
+            }
+
+            .buttonAddWrapper{
+                width: 33.3%;
+                .buttonInput{
+                    width: calc(100% - 20px);
+                    height: 100%;
+
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all .25s ease-in-out;
+
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: 'Roboto Mono', monospace;
+                    box-shadow: 0px 0px 14px -1px rgba(66, 68, 90, 0.34);
+                    background: rgba(255, 220, 64, 0.845);
+                }
+                
+            }
+            .buttonInput:hover{
+                opacity: 0.7;
+            }
+            .buttonInput:active{
+                scale: 0.85;
+            }
+        }
+    }
+}
+
+
