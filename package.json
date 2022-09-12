@@ -16,11 +16,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "db": "json-server --watch ./src/server/db/db.json --port 8021"
+    "db": "json-server --watch ./src/server/db/db.json --port 8021",
+    "start": "concurrently \"react-scripts start\" \"json-server --watch ./src/server/db/db.json --port 8021\""
   },
   "eslintConfig": {
     "extends": [
