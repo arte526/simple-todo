@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "build": "concurrently \"react-scripts build\" \"json-server --watch ./src/server/db/db.json --port 8021\"",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "db": "json-server --watch ./src/server/db/db.json --port 8021",
