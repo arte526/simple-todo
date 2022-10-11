@@ -2,7 +2,7 @@ const axios = require('axios').default;
 
 const sendParams = async (obj) => {
     try{
-        await axios.post(`http://localhost:8021/todos/`, obj);
+        await axios.post(`http://simple-todo-mocha.vercel.app/todos/`, obj);
     }catch(e){
         console.log(e);
     }
@@ -10,7 +10,7 @@ const sendParams = async (obj) => {
 
 const editParams = async (id, obj) => {
     try{
-        await axios.put(`http://localhost:8021/todos/${id}`, obj);
+        await axios.put(`http://simple-todo-mocha.vercel.app/todos/${id}`, obj);
         
     }catch(e){
         console.log(e);
@@ -19,7 +19,7 @@ const editParams = async (id, obj) => {
 
 const getPosts = async (obj) => {
     try{
-        const posts = await axios.get('http://localhost:8021/todos/');
+        const posts = await axios.get('http://simple-todo-mocha.vercel.app/todos/');
         return posts
     }catch(e){
         console.log(e);
@@ -28,7 +28,7 @@ const getPosts = async (obj) => {
 
 const deletePost = async (id) => {
     try{
-        await axios.delete(`http://localhost:8021/todos/${id}`)
+        await axios.delete(`http://simple-todo-mocha.vercel.app/todos/${id}`)
     }catch(e){
         console.log(e);
     }
